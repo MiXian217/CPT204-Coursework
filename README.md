@@ -34,24 +34,24 @@ The project is organized with a clear separation between data, resources, and so
 
 ```
 USA-Route-Planner/
-│
-├── resources/
-│   ├── attractions.csv
-│   ├── roads.csv
-│   ├── city_coordinates.csv
-│   ├── map.gif
-│   ├── 1000places_sorted.csv
-│   └── ... (other data files)
-│
-├── AttractionMapper.java
-├── Graph.java
-├── Main.java
-├── RoutePlanner.java
-├── RoutePlannerApp.java
-├── RoutePlannerComparison.java
-├── SortingPerformanceTester.java
-│
-└── README.md
+└── src/
+    ├── resources/                                # Contains all data files required by the application.
+    │   ├── attractions.csv                       # Data mapping attractions to cities.
+    │   ├── roads.csv                             # Data for roads and distances between cities.
+    │   ├── city_coordinates.csv                  # Geographic coordinates (lat/lon) for map plotting.
+    │   ├── map.gif                               # The background map image for the GUI.
+    │   ├── 1000places_random.csv                 # Dataset for sorting benchmark.
+    │   └── ...                                   # Other sorting benchmark datasets.
+    │
+    ├── AttractionMapper.java                     # Handles loading and mapping attractions to cities from attractions.csv.
+    ├── Graph.java                                # Models the US road network using an adjacency list from roads.csv.
+    ├── Main.java                                 # A command-line entry point to run predefined test cases without the GUI.
+    ├── RoutePlanner.java                         # Implements the core optimal route planning logic (Dijkstra + Permutations).
+    ├── RoutePlannerApp.java                      # The main JavaFX application; handles the GUI, map visualization, and user input.
+    ├── RoutePlannerComparison.java               # A higher-level planner that runs and compares both the optimal and heuristic algorithms.
+    ├── SortingPerformanceTester.java             # A standalone utility to benchmark and compare sorting algorithms.
+    │
+    └── README.md                                 # This file.
 ```
 
 ---
