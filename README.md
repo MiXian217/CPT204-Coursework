@@ -1,7 +1,7 @@
 # USA Route Planner
 
-![Java](https://img_shields.io/badge/Language-Java-orange.svg)
-![JavaFX](https://img_shields.io/badge/Framework-JavaFX-blue.svg)
+![Java](https://img.shields.io/badge/Language-Java-orange.svg)
+![JavaFX](https://img.shields.io/badge/Framework-JavaFX-blue.svg)
 
 An advanced application for planning optimal road trips across the USA, developed from scratch in Java. This project leverages graph theory and complex algorithms to find the shortest possible travel route between a start and end city, including any number of user-specified attractions along the way.
 
